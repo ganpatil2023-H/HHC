@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HomeHealth AI — Sign In</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <section class="brand-panel">
+      <div class="brand">
+        <div class="brand-mark">✚</div>
+        <div>
+          <div class="brand-name">HomeHealth <span>AI</span></div>
+          <div class="tagline">Smarter Coding. Better Outcomes.</div>
+        </div>
+      </div>
+
+      <div class="hero-copy">
+        <p class="eyebrow">AI-POWERED HOME HEALTH</p>
+        <h1>Home Health Coding &amp; OASIS Assistant</h1>
+        <p class="intro">Accurate coding. Complete documentation. Better patient outcomes.</p>
+
+        <div class="features">
+          <div class="feature">
+            <div class="icon">✦</div>
+            <div><strong>AI-Powered Analysis</strong><span>Extract clinical insights and recommend ICD-10 codes with supporting evidence.</span></div>
+          </div>
+          <div class="feature">
+            <div class="icon">✓</div>
+            <div><strong>Built for Home Health</strong><span>M1021, M1023, OASIS, POC and more with configurable coding rules.</span></div>
+          </div>
+          <div class="feature">
+            <div class="icon">▣</div>
+            <div><strong>Quality Assurance</strong><span>Detect errors, flag inconsistencies and improve coding accuracy.</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="privacy-note">Designed for secure healthcare workflows • Configure your compliance controls before production PHI use.</div>
+    </section>
+
+    <section class="login-panel">
+      <div class="login-card">
+        <div class="mobile-brand">HomeHealth <span>AI</span></div>
+        <h2>Welcome Back</h2>
+        <p class="subtitle">Sign in to your HomeHealth AI account</p>
+
+        <form id="loginForm" novalidate>
+          <label for="email">Email Address</label>
+          <div class="input-wrap">
+            <span class="input-icon">✉</span>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required>
+          </div>
+          <div class="error" id="emailError"></div>
+
+          <div class="label-row">
+            <label for="password">Password</label>
+          </div>
+          <div class="input-wrap">
+            <span class="input-icon">▣</span>
+            <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required minlength="6">
+            <button class="eye" type="button" id="togglePassword" aria-label="Show password">◉</button>
+          </div>
+          <div class="error" id="passwordError"></div>
+
+          <div class="options">
+            <label class="remember"><input id="remember" type="checkbox" checked><span>Remember me</span></label>
+            <a href="#" id="forgot">Forgot password?</a>
+          </div>
+
+          <button class="sign-in" type="submit" id="signInButton">Sign In <span>→</span></button>
+
+          <div class="divider"><span>OR</span></div>
+
+          <button class="microsoft" type="button" id="microsoft">
+            <span class="ms-logo"><i></i><i></i><i></i><i></i></span>
+            Sign in with Microsoft
+          </button>
+
+          <p class="account-help">Don't have an account? <a href="#" id="contact">Contact your administrator</a></p>
+          <div class="form-message" id="formMessage" role="status"></div>
+        </form>
+      </div>
+
+      <footer>
+        <span>🔒 Secure healthcare workflow</span>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </footer>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
